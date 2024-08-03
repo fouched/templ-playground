@@ -8,15 +8,21 @@ You can use [Air](https://github.com/air-verse/air) a live reloading tool for Go
 
 With go 1.22 or higher:
 
-```go install github.com/air-verse/air@latest```
+```
+go install github.com/air-verse/air@latest
+```
 
 The included **.air.toml** file reloads changes to templ templates as well, so install templ if required.
 
-```go install github.com/a-h/templ/cmd/templ@latest```
+```
+go install github.com/a-h/templ/cmd/templ@latest
+```
 
 ## Running the project
 With above installed, at the root of project run:
 
-```air```
+```
+air
+```
 
 This will start the web app and auto reload any changes as they are saved.
