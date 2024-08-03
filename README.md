@@ -2,7 +2,7 @@
 
 A simple project using [TEMPL](https://templ.guide) as template engine.
 
-You can [Air](https://github.com/air-verse/air) a live reloading tool for Go apps with this project
+You can use [Air](https://github.com/air-verse/air) a live reloading tool for Go apps with this project.
 
 ## Air Installation
 
@@ -15,7 +15,7 @@ The included **.air.toml** file reloads changes to templ templates as well, so i
 `go install github.com/a-h/templ/cmd/templ@latest`
 
 ## Running the project
-At the root of project run:
+With above installed, at the root of project run:
 
 `air`
 
