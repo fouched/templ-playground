@@ -1,0 +1,29 @@
+package templates
+
+import (
+	"github.com/fouched/templ-playground/templates/components"
+)
+
+templ About() {
+	<!doctype html>
+	<html lang="en">
+	@HtmlHeader()
+	<body>
+	<div class="container">
+		@components.PageBanner()
+		<div class="row">
+			<div class="col-md-2">
+				@components.VerticalNavbar([] components.Link {
+					{Name: "Home", Href: "/"},
+					{Name: "About", Href: "/about"},
+				})
+			</div>
+			<div class="col-md-10">	
+				<h2>About Page</h2>
+			</div>
+		</div>	
+	@Footer()
+	</div>
+	</body>
+	</html>				
+}

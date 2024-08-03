@@ -1,0 +1,33 @@
+package components
+
+type Link struct {
+	Name 	string
+	Href	string
+}
+
+templ PageBanner() {
+	<div class="row">	
+		<div class="col">
+			<h1 class="mt-3">Go with Templ &amp; Air!!</h1>
+		</div>
+		<hr class="mb-3">	
+	</div>
+}
+
+templ SomeComponent() {
+	<h2>I'm a component in a H2 tag</h2>
+}
+
+templ ComponentWithParam(foobar string) {
+	<div>I'm a component that got passed: <b>{foobar}</b></div>
+}
+
+templ VerticalNavbar(links []Link) {
+	<nav>
+		<div class="list-group">
+			for _, link := range links {
+				<a href={templ.URL(link.Href)} class="list-group-item list-group-item-action">{link.Name}</a>
+			}
+		</div>
+	</nav>			
+}
