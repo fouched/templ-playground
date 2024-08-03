@@ -2,7 +2,7 @@
 
 A simple project using [TEMPL](https://templ.guide) as template engine.
 
-You can use [Air](https://github.com/air-verse/air) a live reloading tool for Go apps with this project.
+You can use [Air](https://github.com/air-verse/air) for live reloading with this project.
 
 ## Air Installation
 
